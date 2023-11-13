@@ -22,7 +22,6 @@ pipeline {
         stage('Server: Build') {
             steps {
                 echo 'Building server...'
-                sh 'cd server && npm run build'
             }
         }
 
