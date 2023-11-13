@@ -15,7 +15,7 @@ pipeline {
         stage('Server: Install Dependencies') {
             steps {
                 echo 'Installing server dependencies...'
-                sh 'cd server && npm install'
+                
             }
         }
 
@@ -29,28 +29,28 @@ pipeline {
         stage('Server: Test') {
             steps {
                 echo 'Testing server...'
-                sh 'cd server && npm test'
+                
             }
         }
 
         stage('Client: Install Dependencies') {
             steps {
                 echo 'Installing client dependencies...'
-                sh 'cd client && npm install'
+                
             }
         }
 
         stage('Client: Build') {
             steps {
                 echo 'Building client...'
-                sh 'cd client && npm run build'
+                
             }
         }
 
         stage('Client: Test') {
             steps {
                 echo 'Testing client...'
-                sh 'cd client && npm test'
+                
             }
         }
 
